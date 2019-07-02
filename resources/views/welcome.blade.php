@@ -15,11 +15,14 @@
     html,
     body {
         background-color: #fff;
+        background-image:url({{asset ('/images/backg.jpg')}});
+        background-size:cover;
         color: #636b6f;
         font-family: 'Nunito', sans-serif;
         font-weight: 200;
         height: 100vh;
         margin: 0;
+
     }
 
     .full-height {
@@ -82,20 +85,17 @@
         </div>
         @endif
 
-        <div class="content">
-            <div class="title m-b-md">
-                Benco Merchant
+        <div class="container"><br><br>
+            <div class="title m-b-md"><br><br><br>
+               &nbsp&nbsp&nbsp <b>Benco Merchant</b>
+
+                <marquee behavior="opposit" direction="">
+            <img height="500px" height="400px" src="{{asset ('/images/lab1.PNG')}}" alt="">
+            <img height="500px" height="400px" src="{{asset ('/images/lab2.jpg')}}" alt="">
+            <img height="500px" height="40px" src="{{asset ('/images/lab3.jpg')}}" alt="">
+</marquee>
             </div>
 
-            <!-- <div class="links">
-                <a href="https://laravel.com/docs">Docs</a>
-                <a href="https://laracasts.com">Laracasts</a>
-                <a href="https://laravel-news.com">News</a>
-                <a href="https://blog.laravel.com">Blog</a>
-                <a href="https://nova.laravel.com">Nova</a>
-                <a href="https://forge.laravel.com">Forge</a>
-                <a href="https://github.com/laravel/laravel">GitHub</a>
-            </div> -->
         </div>
     </div>
 </body>

@@ -8,9 +8,6 @@
                 <div class="card-header">
                     <div class="col-md-4">
 
-                        <img class="image-circle" height="120px" width="150px" src="{{ asset('uploads/images/' . $photo)}}"
-                            alt="">
-
 
                     </div>
                     <h2>Welcome {{Auth::user()->name}}</h2>
@@ -18,8 +15,6 @@
                 </div>
 
                 <div class="card-body">
-
-
 
 
                 </div>
