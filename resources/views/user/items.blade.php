@@ -24,8 +24,7 @@
                         </thead>
                         <tbody id="">
                             @foreach($stock as $stock)
-                            <tr>
-                                
+                            <tr>    
                                 <td>{{$stock->item}}</td>
                                 <td>{{$stock->sprice}}</td>
                                 <th></th>

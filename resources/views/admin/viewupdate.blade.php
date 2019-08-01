@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h2>Benco Updates</h2>
+                    <h2>Agrovet Updates</h2>
                 </div>
 
                 <div class="card-body">
