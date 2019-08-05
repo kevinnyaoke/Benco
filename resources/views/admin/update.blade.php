@@ -34,7 +34,7 @@
                                 placeholder="update status"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-default">Send Update</button>
+                        <button type="submit" class="btn btn-primary">Send Update</button>
                     </form>
                 </div>
             </div>

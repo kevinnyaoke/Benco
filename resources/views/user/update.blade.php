@@ -8,7 +8,7 @@
                 <div class="card-header"><h2>Agrovet Updates</h2></div>
 
                 <div class="card-body">
-
+{{$update->links()}}
 
                     <table class="table table-hover" id="myTable">
                         <thead>

@@ -11,7 +11,7 @@
 
 
                 <div class="card-body">
-
+                {{ $stock->links() }}
 
                     <table class="table table-hover" id="myTable">
                         <thead>
@@ -31,6 +31,7 @@
                             </tr>
                             @endforeach
                     </table>
+                   
                 </div>
             </div>
         </div>

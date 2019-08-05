@@ -11,9 +11,7 @@
 
                 <div class="card-body">
 
-
-
-            
+                {{$update->links()}}
                   @include('includes.message')
                     <table class="table table-hover" id="myTable">
                         <thead>
