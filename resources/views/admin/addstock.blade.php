@@ -57,7 +57,7 @@
                                 placeholder="write the description of the item"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>

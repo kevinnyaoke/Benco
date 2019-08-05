@@ -10,13 +10,13 @@
                 </div>
 
                 <div class="card-body">
+                 {{ $stock->links() }}
                     @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
                     </div>
                     @endif
                     @include('includes.message')
-
                     <table class="table table-hover" id="myTable">
                         <thead>
                             <tr>

@@ -64,7 +64,7 @@ class CustomController extends Controller
     }
 
     public function orders(){
-          $orders=Purchase::all();
+          $orders=Purchase::orderBy('id','desc')->paginate('15');
           return view('admin.orders',compact('orders',$orders));
     }
 
@@ -104,7 +104,7 @@ class CustomController extends Controller
     }
 
     public function items(){
-        $stock=Stock::all();
+        $stock=Stock::orderBy('id','desc')->paginate(10);
         $client=User::all();
         return view('user.items',['stock'=>$stock,'client'=>$client]);
     }
@@ -116,12 +116,12 @@ class CustomController extends Controller
     }
    
     public function viewupdate(){
-        $update=Update::all();
+        $update=Update::orderBy('id','desc')->paginate('10');
         return view('user.update',compact('update',$update));
     }
 
     public function adminstock(){
-        $stock=Stock::all();
+        $stock=Stock::orderBy('id','desc')->paginate('15');
         return view('admin.stock',['stock'=>$stock]);
     }
 
@@ -163,11 +163,11 @@ class CustomController extends Controller
          $stock->description=$description;
          $stock->update();
 
-        $stock=Stock::all();
-        return view('admin.stock',compact('stock',$stock))->with('success','Update was successfull');
+        $stock=Stock::orderBy('id','desc')->paginate('15');
+        return redirect()->route('adminstock')->with('success','Update was successfull');
     }
     public function adminupdate(){
-        $update=Update::all();
+        $update=Update::orderBy('id','desc')->paginate('15');
         return view('admin.viewupdate',(['update'=>$update]));
     }
     public function delupdate($id){
@@ -198,8 +198,8 @@ class CustomController extends Controller
         $myupdate->updates=$update;
         $myupdate->update();
         
-        $update=Update::all();
-        return view('admin.viewupdate',(['update'=>$update]))->with('success','Update was successful');
+        $update=Update::orderBy('id','desc')->paginate('15');
+        return redirect()->route('viewupdate')->with('success','Update was successful');
     }
   
     public function editorder($id){

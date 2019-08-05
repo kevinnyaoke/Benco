@@ -5,13 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"><h2>Benco Updates</h2></div>
+                <div class="card-header"><h2>Agrovet Updates</h2></div>
 
                 <div class="card-body">
-
-
-
-                    <h2>Benco updates</h2>
+{{$update->links()}}
 
                     <table class="table table-hover" id="myTable">
                         <thead>

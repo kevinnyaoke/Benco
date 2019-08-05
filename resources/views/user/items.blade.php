@@ -11,7 +11,7 @@
 
 
                 <div class="card-body">
-
+                {{ $stock->links() }}
 
                     <table class="table table-hover" id="myTable">
                         <thead>
@@ -24,14 +24,14 @@
                         </thead>
                         <tbody id="">
                             @foreach($stock as $stock)
-                            <tr>
-                                
+                            <tr>    
                                 <td>{{$stock->item}}</td>
                                 <td>{{$stock->sprice}}</td>
                                 <th></th>
                             </tr>
                             @endforeach
                     </table>
+                   
                 </div>
             </div>
         </div>

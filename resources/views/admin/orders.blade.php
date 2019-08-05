@@ -10,6 +10,7 @@
                 </div>
 
                 <div class="card-body">
+                {{ $orders->links() }}
                     @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
@@ -19,11 +20,11 @@
 
                     <h3>Available Orders</h3>
                     @include('includes.message')
-
+     
                     <table class="table table-hover" id="myTable">
                         <thead>
                             <tr>
-                                <th>Id</th>
+                                <!-- <th>Id</th> -->
                                 <th>Client</th>
                                 <th>Contact</th>
                                 <th>Item</th>
@@ -37,7 +38,7 @@
                         <tbody id="">
                             @foreach($orders as $orders)
                             <tr>
-                                <td>{{$orders->id}}</td>
+                                <!-- <td>{{$orders->id}}</td> -->
                                 <td>{{$orders->client}}</td>
                                 <td>{{$orders->contact}}</td>
                                 <td>{{$orders->item}}</td>

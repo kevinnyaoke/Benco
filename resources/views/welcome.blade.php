@@ -87,13 +87,23 @@
 
         <div class="container"><br><br>
             <div class="title m-b-md"><br><br><br>
-               &nbsp&nbsp&nbsp <b>Benco Merchant</b>
+               &nbsp&nbsp&nbsp <b>Agrovet System</b>
 
+               <div>
                 <marquee behavior="opposit" direction="">
+<<<<<<< HEAD
             <img height="400px" width="400px" src="{{asset ('/images/lab1.PNG')}}" alt="">
             <img height="400px" width="400px" src="{{asset ('/images/lab2.jpg')}}" alt="">
             <img height="400px" width="400px" src="{{asset ('/images/lab3.jpg')}}" alt="">
+=======
+                <img height="300px" width="400px" src="{{asset ('/images/img1.jpg')}}" alt="">
+                <img height="300px" width="400px" src="{{asset ('/images/img2.jpg')}}" alt="">
+            <img height="300px" width="400px" src="{{asset ('/images/img3.jpg')}}" alt="">
+            <img height="300px" width="400px" src="{{asset ('/images/img4.jpg')}}" alt="">
+            <img height="300px" width="400px" src="{{asset ('/images/img5.jpg')}}" alt="">
+>>>>>>> 5c45711a8917355b3869be5f10079c28f3a6d4f6
 </marquee>
+                </div>
             </div>
 
         </div>
