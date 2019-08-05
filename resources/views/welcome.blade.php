@@ -90,9 +90,9 @@
                &nbsp&nbsp&nbsp <b>Benco Merchant</b>
 
                 <marquee behavior="opposit" direction="">
-            <img height="500px" height="400px" src="{{asset ('/images/lab1.PNG')}}" alt="">
-            <img height="500px" height="400px" src="{{asset ('/images/lab2.jpg')}}" alt="">
-            <img height="500px" height="40px" src="{{asset ('/images/lab3.jpg')}}" alt="">
+            <img height="400px" width="400px" src="{{asset ('/images/lab1.PNG')}}" alt="">
+            <img height="400px" width="400px" src="{{asset ('/images/lab2.jpg')}}" alt="">
+            <img height="400px" width="400px" src="{{asset ('/images/lab3.jpg')}}" alt="">
 </marquee>
             </div>
 

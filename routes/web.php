@@ -35,6 +35,10 @@ Route::get('/viewupdate','CustomController@adminupdate')->name('viewupdate');
 Route::post('/updateup','CustomController@updateup')->name('updateup');
 Route::post('/pupdate','CustomController@pupdate')->name('pupdate');
 
+Route::group(['middlewere'=>'auth'], function(){
+Route::get('/dashboard','CustomController@dashboard')->name('dashboard');
+
+});
 
 
 
@@ -76,10 +80,6 @@ Route::get('/editorder/{id}',[
 //     'as'=>'purchase',
 // ]);
 
-Route::group(['middleware'=>'auth'],function(){
-    Route::get('/home', 'HomeController@index')->name('home');
-
-   Route::get('/dashboard','CustomController@dashboard')->name('dashboard');
-});
+ 
 
 
